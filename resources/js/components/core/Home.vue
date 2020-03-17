@@ -13,10 +13,12 @@
                 <ul class="todo-list">
                     <li v-for="person in people" :key="person.id" class="todo">
                         <div class="view d-flex flex-row justify-content-between align-items-center">
-                            <input type="checbox" class="toggle">
+                            <input type="checkbox" class="toggle">
                             <label for="">{{person.name}}</label>
                             <div class="d-flex flex-row justify-content-between align-items-center">
-                                <router-link :to="{ name: 'view', params: {idName: person.id}}">View</router-link>
+                                <button class="btn btn-primary">
+                                    <router-link :to="{ name: 'view', params: {idName: person.id}}">View</router-link>
+                                </button>
                                 <button @click="deletePerson(person.id)" class="btn-danger">delete</button>
                             </div>
                             <input type="text" class="edit">
@@ -35,10 +37,13 @@
                     <li>
                         <a href="#/active" >Active</a>
                     </li>
+                    <li>
+                        <a @click="deleteItems()" href="#/delete" >Delete</a>
+                    </li>
                 </ul>
             </footer>
         </section>
-        <Modal v-if="isModal" @closedModal="showModal()"/>
+        <Modal v-if="isModal" @closedModal="showModal" />
     </div>
 </template>
 
@@ -53,24 +58,41 @@ export default {
     data() {
         return {
             isModal: false,
-            people: null,
+            people: [],
             err: ''
         }
     },
-     created ()  {
-       let self = this;
-       axios.get('http://laravel-vue-todo.com/person')
-        .then(res => self.people = res.data)
-        .catch(err => this.err = err)
+
+    mounted () {
+        this.fetchApi()
     },
+
     methods: {
-        showModal: function () {
-            this.isModal = !this.isModal
+        showModal: function (value) {
+            if(value) {
+                this.people.push(value)
+                this.isModal = !this.isModal
+            } else {
+                this.isModal = !this.isModal
+            }
         },
         deletePerson: function (id) {
+            // this.people.forEach((x, index) => console.log(index))
             axios.delete(`http://laravel-vue-todo.com/person/${id}`)
                 .then(res => console.log(res))
             this.people = this.people.filter(x => x.id !== id)
+        },
+        deleteItems: function () {
+            console.log('delete items')
+        },
+        fetchApi: function () {
+            console.log('fetching...')
+            axios.get('http://laravel-vue-todo.com/person')
+                .then(res => {
+                    console.log(res)
+                    this.people = res.data
+                })
+                .catch(err => this.err = err)
         }
     }
 }

@@ -28,3 +28,12 @@ class PostController extends Controller
         return Person::find($id)->post;
     }
 }
+
+/**
+ * hasOne
+ * hasMay
+ * 'belongsTo
+ * belongsToMany
+ * morhMany
+ * morhpToMany
+ */

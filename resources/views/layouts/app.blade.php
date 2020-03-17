@@ -26,6 +26,10 @@
         body {
             margin: auto;
         }
+
+        a {
+            color: white;
+        }
     </style>
 
 </head>

@@ -3,18 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="3888b647-e0fb-4704-94bb-becb14569823" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_15_054203_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_054203_create_posts_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/core/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/core/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/core/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/core/Modal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +140,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/php-projects/content-management" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -180,6 +180,8 @@
       <workItem from="1584085428438" duration="2341000" />
       <workItem from="1584177124353" duration="6641000" />
       <workItem from="1584234808249" duration="35319000" />
+      <workItem from="1584342539569" duration="7712000" />
+      <workItem from="1584411663757" duration="3153000" />
     </task>
     <servers />
   </component>
@@ -187,19 +189,19 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1584273885037">
+    <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1584335201520">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="-867" y="-12" key="FileChooserDialogImpl/-1360.-169.1360.728/0.0.1600.860@-1360.-169.1360.728" timestamp="1584182473925" />
-    <state x="580" y="186" key="FileChooserDialogImpl/-1360.-169.1360.728/0.0.1600.860@0.0.1600.860" timestamp="1584273885037" />
-    <state x="492" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1584234811550">
+    <state x="580" y="186" key="FileChooserDialogImpl/-1360.-169.1360.728/0.0.1600.860@0.0.1600.860" timestamp="1584335201520" />
+    <state x="492" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1584411664597">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="492" y="256" key="com.intellij.ide.util.TipDialog/-1360.-169.1360.728/0.0.1600.860@0.0.1600.860" timestamp="1584234811550" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1584278889704">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="492" y="256" key="com.intellij.ide.util.TipDialog/-1360.-169.1360.728/0.0.1600.860@0.0.1600.860" timestamp="1584411664597" />
+    <state x="-966" y="-17" width="672" height="574" key="search.everywhere.popup" timestamp="1584414990341">
+      <screen x="-1360" y="-169" width="1360" height="728" />
     </state>
-    <state x="-966" y="-17" width="672" height="574" key="search.everywhere.popup/-1360.-169.1360.728/0.0.1600.860@-1360.-169.1360.728" timestamp="1584183159918" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/-1360.-169.1360.728/0.0.1600.860@0.0.1600.860" timestamp="1584278889704" />
+    <state x="-966" y="-17" width="672" height="574" key="search.everywhere.popup/-1360.-169.1360.728/0.0.1600.860@-1360.-169.1360.728" timestamp="1584414990341" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/-1360.-169.1360.728/0.0.1600.860@0.0.1600.860" timestamp="1584348778064" />
   </component>
 </project>

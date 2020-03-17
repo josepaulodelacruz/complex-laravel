@@ -33,6 +33,8 @@ export default {
             name: '',
             posts: '',
             title: '',
+            checked: false,
+            person: null
         }
     },
 
@@ -45,7 +47,7 @@ export default {
             console.log('closing modal')
             this.$emit('closedModal', false)
         },
-        submit () {
+        async submit () {
             if(this.view) {
                 axios.post(`http://laravel-vue-todo.com/posts`, {
                     title: this.title,
@@ -59,17 +61,19 @@ export default {
                 this.person_id = ''
                 this.$emit('closedModal', false)
             } else {
-                console.log(false, this.name)
-                console.log(this.name)
-                axios.post('http://laravel-vue-todo.com/person', {
-                    name: this.name
-                }).then(function(res) {
-                    console.log(res)
-                }).catch(function(err) {
-                    console.log(err)
-                })
-               this.name = ''
-               this.$emit('closedModal', false)
+                try {
+                    axios.post('http://laravel-vue-todo.com/person', {
+                        name: this.name
+                    })
+                        .then(res => this.person = res.data)
+                        .then(res => {
+                            this.$emit('closedModal', this.person)
+                        })
+                } catch (err) {
+                    console.log(er)
+                }
+
+
 
             }
 

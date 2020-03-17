@@ -26,9 +26,10 @@ class PersonController extends Controller
 
     public function destroy ($id)
     {
-        $deletePerson = Person::find($id);
+        $person = Person::find($id);
 
-        $deletePerson->delete();
+        $person->delete();
+
 
         return 'Successfully deleted';
     }
