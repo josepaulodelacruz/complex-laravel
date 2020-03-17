@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::resource('person', 'PersonController');
 
 Route::resource('posts', 'PostController');
+Route::resource('tags', 'TagsController');
 
 //Route::get('person', 'PersonController@index');
 //Route::post('person', 'PersonController@store');

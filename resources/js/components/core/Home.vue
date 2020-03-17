@@ -2,7 +2,7 @@
     <div class="todo-container">
         <section class="todoapp">
             <header class="header">
-                <h1>todos</h1>
+                <h1>TODOS</h1>
                 <input @click="showModal()" type="text" autofocus="autofocus" autocomplete="off" placeholder="Please add a person" class="new-todo">
             </header>
             <section class="main">

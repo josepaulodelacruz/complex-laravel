@@ -6,6 +6,7 @@ use App\Http\Requests\PostRequest;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Person;
+use App\Tags;
 
 class PostController extends Controller
 {
@@ -27,12 +28,17 @@ class PostController extends Controller
     {
         return Person::find($id)->post;
     }
+
+    public function tags ()
+    {
+        return $this->belongsToMany(Tags::class);
+    }
 }
 
 /**
  * hasOne
  * hasMay
- * 'belongsTo
+ * belongsTo
  * belongsToMany
  * morhMany
  * morhpToMany

@@ -3,18 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3888b647-e0fb-4704-94bb-becb14569823" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Person.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_15_054203_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_054203_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/core/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/core/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/core/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/core/Modal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/core/View.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/core/View.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +175,7 @@
       <workItem from="1584177124353" duration="6641000" />
       <workItem from="1584234808249" duration="35319000" />
       <workItem from="1584342539569" duration="7712000" />
-      <workItem from="1584411663757" duration="3153000" />
+      <workItem from="1584411663757" duration="12394000" />
     </task>
     <servers />
   </component>
@@ -198,10 +192,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="492" y="256" key="com.intellij.ide.util.TipDialog/-1360.-169.1360.728/0.0.1600.860@0.0.1600.860" timestamp="1584411664597" />
-    <state x="-966" y="-17" width="672" height="574" key="search.everywhere.popup" timestamp="1584414990341">
-      <screen x="-1360" y="-169" width="1360" height="728" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1584426210516">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="-966" y="-17" width="672" height="574" key="search.everywhere.popup/-1360.-169.1360.728/0.0.1600.860@-1360.-169.1360.728" timestamp="1584414990341" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/-1360.-169.1360.728/0.0.1600.860@0.0.1600.860" timestamp="1584348778064" />
+    <state x="-966" y="-17" width="672" height="574" key="search.everywhere.popup/-1360.-169.1360.728/0.0.1600.860@-1360.-169.1360.728" timestamp="1584418774163" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/-1360.-169.1360.728/0.0.1600.860@0.0.1600.860" timestamp="1584426210516" />
   </component>
 </project>

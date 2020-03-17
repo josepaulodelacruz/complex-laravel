@@ -11,6 +11,10 @@
                             <input v-if="view" v-model="posts" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             <input v-if="!view" v-model="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             <small id="emailHelp" class="form-text text-muted">Input your {{view ? "Posts" : "Name"}}</small>
+
+                            <label v-if="view" for="">Tags</label>
+                            <input v-if="view" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
                         </div>
                         <button type="submit" class="btn btn-primary" id="add" @click="submit()">Submit</button>
                         <button class="btn btn-danger" id="close-btn"  @click="closeModal()">Close</button>
@@ -33,6 +37,7 @@ export default {
             name: '',
             posts: '',
             title: '',
+            tags: '',
             checked: false,
             person: null
         }
